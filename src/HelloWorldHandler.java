@@ -3,7 +3,7 @@ import java.lang.reflect.Method;
 
 
 public class HelloWorldHandler implements InvocationHandler{
-	private Object obj;
+	private Object obj;  // The object that the original method will be called on, normally it will be the object that use the proxy
 	
 	public HelloWorldHandler(Object obj) {
 		super();
